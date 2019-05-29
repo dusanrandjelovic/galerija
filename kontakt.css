@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-family: 'Cardo', serif;
+    background-color: whitesmoke;
+  /*font-family: 'Heebo', sans-serif;*/
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#glavni {
+  display: flex;
+}
+
+aside {
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+}
+.logo a {
+  height: 14%;
+}
+
+.navigacija {
+  right: 0;
+  margin-top: 1.9%;
+  text-align: center;
+}
+.navigacija span {
+  font-size:40px;
+  cursor:pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 10%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    font-size: 60px;
+  }
+
+  #centar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10%;
+    width: 90%;
+    /*width: 100%;*/
+  }
+
+h1 {
+  font-size: 4.5em;
+  font-weight: 200;
+}
+  main {
+    margin: 8% 11% 8% 0;
+  display: flex;
+  justify-content: space-between;
+  }
+main .levo {
+  width: 65%;
+}
+main p {
+  font-weight: 500;
+}
+main .desno {
+  font-size: 1.2em;
+}
+.desno a {
+  color: black;
+}
+.desno a:hover {
+  color: grey;
+}
+
+#prvideo {
+  display: flex;
+  flex-wrap: wrap;
+}
+#prvideo div {
+  width: 29%;
+}
+#prvideo p {
+  font-size: 1.1em;
+}
+
+  #drugideo {
+    margin: 4% 11% 1% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #drugideo div {
+    width: 45%;
+  }
+#drugideo p {
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+#drugideo h2 {
+  font-size: 3.8em;
+  font-weight: 200;
+}
+
+#trecideo {
+  margin: 2% 11% 4% 0;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.red {
+  display: flex;
+  justify-content: space-between;
+}
+.red div {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  padding: 2% 0;
+}
+input, textarea {
+  padding: 2%;
+  margin-top: 1%;
+  border: 1px solid black;
+  color: black;
+}
+button {
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 14px;
+  letter-spacing: 0.03em;
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+    .dno {
+      color: white;
+      text-align: center;
+      background-color: black;
+      padding: 1.2% 0;
+    }
+    #top {
+      float: right;
+      position: fixed;
+      bottom: 10px;
+      right: 15px;
+      display: none;
+
+    }
+    #top a {
+        background-color: rgb(34, 35, 42);
+      color: #8c8989;
+    padding: 7px 11px;
+    }
+    #top a:hover {
+      background-color: #f2ab37;
+    }
+
+
+
+@media screen and (max-width: 990px){
+  aside {
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color: inherit;
+    z-index: 999;
+  }
+
+  /*logo*/
+  .logo {
+    margin-left: 2%;
+  }
+  .logo a {
+    height: 4%;
+  }
+
+  /*navigacija*/
+  .navigacija {
+    margin-right: 2%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+    main {
+      margin: 100px 11% 9% 11%;
+      flex-direction: column;
+    }
+#prvideo div {
+  width: 50%;
+}
+}
+
+@media screen and (max-width: 768px){
+  .overlay {
+    left: 0;
+  }
+  .overlay-content {
+    width: 100%;
+  }
+  .overlay .closebtn {
+    right: 2%;
+  }
+  #prvideo, #drugideo, .red {
+    flex-direction: column;
+  }
+  #prvideo div {
+    width: 70%;
+    margin-left: 11%;
+    margin-top: 3%;
+  }
+  #drugideo div, .red div {
+    width: 75%;
+  }
+  #drugideo h2 {
+    font-size: 2.6em;
+  }
+  #trecideo {
+    margin-left: 11%;
+  }
+
+}
+
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

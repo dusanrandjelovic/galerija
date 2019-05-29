@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-family: 'Cardo', serif;
+  background-color: whitesmoke;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+#glavni {
+  display: flex;
+}
+
+aside {
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+}
+
+/*logo*/
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+}
+.logo a {
+  height: 14%;
+}
+
+/*navigacija*/
+.navigacija {
+  right: 0;
+  margin-top: 1.9%;
+  text-align: center;
+}
+.navigacija span {
+  font-size:40px;
+  cursor:pointer;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 10%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .overlay a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    font-size: 60px;
+  }
+
+  /*sredisnji deo*/
+  #centar {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    left: 10%;
+    position: relative;
+  }
+
+  main {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  .slajd {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0 22% 0;
+    position: relative;
+
+  }
+
+  .naslov {
+    color: black;
+    letter-spacing: 0.02em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: whitesmoke;
+    padding: 5% 1%;
+  }
+  .naslov h1 {
+    font-size: 4em;
+  }
+  .naslov a {
+    text-decoration: none;
+      letter-spacing: 0.02em;
+    padding: 12px 16px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+  transition: 0.7s;
+  }
+  .naslov a:hover {
+    background: white;
+    color: black;
+  transition: 0.7s;
+  border: 1px solid black;
+  }
+
+#prvideo {
+  padding: 7% 0;
+  margin: 6% 0 1%;
+}
+.dddole {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kutija {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  width: 45%;
+}
+
+.txt, .txt2, .txt3, .txt4, .txt5, .txt6 {
+  margin-top: 65%;
+}
+.txt a, .txt2 a, .txt3 a, .txt4 a, .txt5 a, .txt6 a {
+  text-decoration: none;
+  color: black;
+}
+
+.levo, .levo2, .levo3, .desno, .desno2, .desno3  {
+  width: 100%;
+    position: relative;
+    margin-bottom: 2.4%;
+    height: 100%;
+}
+
+
+.swap-on-hover img, .swap-on-hover2 img, .swap-on-hover3 img, .swap-on-hover4 img,
+.swap-on-hover5 img, .swap-on-hover6 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.swap-on-hover .front, .swap-on-hover2 .front2, .swap-on-hover3 .front3, .swap-on-hover4 .front4,
+.swap-on-hover5 .front5, .swap-on-hover6 .front6 {
+  /*z-index: 1;*/
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+.swap-on-hover .back, .swap-on-hover2 .back2, .swap-on-hover3 .back3, .swap-on-hover4 .back4,
+.swap-on-hover5 .back5, .swap-on-hover6 .back6 {
+  z-index: -1;
+}
+.swap-on-hover:hover > .front, .swap-on-hover2:hover > .front2, .swap-on-hover3:hover > .front3,
+.swap-on-hover4:hover > .front4, .swap-on-hover5:hover > .front5,
+.swap-on-hover6:hover > .front6 {
+  opacity: 0;
+}
+
+#drugideo {
+  margin: 2% 0 8%;
+  border: 2px solid black;
+  padding: 2%;
+  text-align: center;
+}
+input {
+  margin-right: 1.4%;
+  padding: 8px;
+}
+#drugideo button {
+ text-decoration: none;
+   letter-spacing: 0.02em;
+ padding: 10px 12px;
+ background-color: black;
+ color: white;
+transition: 0.7s;
+border: 1px solid white;
+}
+#drugideo button:hover {
+ background: white;
+ color: black;
+ border: 1px solid black;
+transition: 0.7s;
+cursor: pointer;
+}
+
+  footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/paint2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  .gorefuter {
+    padding: 120px 5% 9%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover {
+    color: grey;
+  }
+  .futprostorgore {
+    margin-top: 20%;
+  }
+  .dno {
+    color: white;
+    text-align: center;
+  }
+  #top {
+    float: right;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    display: none;
+
+  }
+  #top a {
+      background-color: rgb(34, 35, 42);
+    color: #8c8989;
+  padding: 7px 11px;
+  }
+  #top a:hover {
+    background-color: #f2ab37;
+  }
+
+    @media screen and (max-width: 1180px){
+      .naslov {
+        height: 55vh;
+      }
+    }
+
+  @media screen and (max-width: 768px){
+    aside {
+      width: auto;
+      height: auto;
+      position: absolute;
+      background-color: inherit;
+      z-index: 999;
+    }
+
+    /*logo*/
+    .logo {
+      margin-left: 2%;
+    }
+    .logo a {
+      height: 4%;
+    }
+
+    /*navigacija*/
+    .navigacija {
+      margin-right: 2%;
+    }
+    .navigacija span {
+      color: white;
+    }
+    .overlay {
+      left: 0;
+    }
+    .overlay-content {
+      width: 100%;
+    }
+    .overlay .closebtn {
+      right: 2%;
+    }
+    #centar {
+      width: 100%;
+      left: 0;
+    }
+
+    .slajd {
+      height: 100vh;
+      border-radius: 0 0 0 0;
+    }
+    .naslov {
+      width: 55%;
+    }
+    .naslov h1 {
+      font-size: 3.2em;
+    }
+
+
+    .dddole {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  .kutija {
+    width: 75%;
+  }
+
+
+    #drugideo {
+      margin: 5% 10%;
+    }
+
+    footer {
+      height: auto;
+      padding-bottom: 1%;
+      background-attachment: scroll;
+    }
+    .gorefuter {
+      flex-direction: column;
+      padding: 6% 5% 6% 10%;
+    }
+    .gorefuter div {
+      padding-top: 4%;
+    }
+    .futprostorgore {
+      margin-top: 6%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #drugideo {
+      display: flex;
+      flex-direction: column;
+    }
+     #drugideo button {
+    margin-top: 2%;
+    }
+  }
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

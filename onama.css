@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-family: 'Cardo', serif;
+    background-color: whitesmoke;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#glavni {
+  display: flex;
+}
+
+/*header {
+  display: flex;
+  justify-content: space-between;
+}*/
+aside {
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+}
+.logo a {
+  height: 14%;
+}
+
+.navigacija {
+  right: 0;
+  margin-top: 1.9%;
+  text-align: center;
+}
+.navigacija span {
+  font-size:40px;
+  cursor:pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 10%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    font-size: 60px;
+  }
+  #centar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    left: 10%;
+  }
+
+h1 {
+  font-size: 4em;
+  font-weight: 200;
+}
+  main {
+    margin: 8% 0;
+    width: 62%;
+  }
+
+  #drugideo {
+    margin: 2% 0 2% 11%;
+    display: flex;
+    justify-content: center;
+
+  }
+  #drugideo div p {
+    line-height: 1.8em;
+    padding: 0 9.6%;
+  }
+  #drugideo img {
+    height: 90vh;
+    width: 100%;
+  }
+
+#trecideo {
+  margin: 4% 11% 4% 0;
+}
+.red {
+  display: flex;
+  justify-content: space-between;
+  margin: 4% 0;
+}
+.slika {
+  width: 54%;
+}
+.tekst {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.tekst h2 {
+  font-size: 2.5em;
+  font-weight: 200;
+}
+.tekst p {
+  line-height: 1.5em;
+}
+
+#cetvrtideo {
+  margin: 3% 11% 3% 0;
+}
+#cetvrtideo h3 {
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: 200;
+}
+.brojevi {
+  display: flex;
+  justify-content: space-between;
+}
+.brojevi div {
+  text-align: center;
+}
+.broj {
+  font-size: 3.5em;
+}
+
+#petideo {
+  margin: 3% 11% 3% 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+#petideo h3 {
+  font-size: 2.3em;
+  font-weight: 200;
+}
+.pozslika {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/slika3.jpg");
+  background-size: cover;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 0;
+}
+.pozslika a, .pozslika2 a  {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 12px;
+  transition: 0.7s;
+}
+.pozslika a:hover, .pozslika2 a:hover {
+  background: black;
+  color: white;
+  border: 1px solid white;
+transition: 0.7s;
+}
+.pozslika2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("img/zena4.jpg");
+  background-size: cover;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 0;
+}
+
+    footer {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/paint2.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      background-attachment: fixed;
+    }
+    .gorefuter {
+      padding: 120px 5% 9%;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+    }
+    footer a {
+      text-decoration: none;
+      color: white;
+    }
+    footer a:hover {
+      color: grey;
+    }
+    .futprostorgore {
+      margin-top: 20%;
+    }
+
+    .dno {
+      color: white;
+      text-align: center;
+    }
+    #top {
+      float: right;
+      position: fixed;
+      bottom: 10px;
+      right: 15px;
+      display: none;
+
+    }
+    #top a {
+        background-color: rgb(34, 35, 42);
+      color: #8c8989;
+    padding: 7px 11px;
+    }
+    #top a:hover {
+      background-color: #f2ab37;
+    }
+
+    @media screen and (max-width: 1030px){
+      #drugideo {
+        margin: 2% 0 2% 0;
+      flex-direction: column;
+      }
+      #drugideo div p {
+        padding: 1% 0;
+          margin: 0 11%;
+      }
+
+
+      .red {
+        flex-direction: column;
+      }
+      .red2 {
+        display: flex;
+        justify-content: space-between;
+        margin: 4% 0;
+        flex-direction: column-reverse;
+      }
+      .slika {
+        width: 100%;
+      }
+      .slika img {
+        height: 40vh;
+        width: 100%;
+      }
+      .tekst {
+        width: 100%;
+      }
+    }
+
+@media screen and (max-width: 990px){
+  aside {
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color: inherit;
+    z-index: 999;
+  }
+
+  /*logo*/
+  .logo {
+    margin-left: 2%;
+  }
+  .logo a {
+    height: 4%;
+  }
+
+  /*navigacija*/
+  .navigacija {
+    margin-right: 2%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+    main {
+      margin: 120px 11% 9% 11%;
+      width: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+  #petideo {
+    flex-direction: column;
+  }
+  .pozslika, .pozslika2 {
+    width: 100%;
+  }
+  .pozslika2 {
+    margin-top: 4%;
+  }
+  /*navigacija*/
+  .navigacija {
+    margin-right: 2%;
+  }
+  .overlay {
+    left: 0;
+  }
+  .overlay-content {
+    width: 100%;
+  }
+  .overlay .closebtn {
+    right: 2%;
+  }
+
+  #cetvrtideo h3 {
+    font-size: 1.7em;
+  }
+
+  footer {
+    height: auto;
+    padding-bottom: 1%;
+    background-attachment: scroll;
+  }
+  .gorefuter {
+    flex-direction: column;
+    padding: 6% 5% 6% 10%;
+  }
+  .gorefuter div {
+    padding-top: 4%;
+  }
+  .futprostorgore {
+    margin-top: 6%;
+  }
+}
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

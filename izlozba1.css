@@ -1,0 +1,422 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-family: 'Cardo', serif;
+  background-color: whitesmoke;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#glavni {
+  display: flex;
+}
+
+/*header {
+  display: flex;
+  justify-content: space-between;
+}*/
+aside {
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+}
+.logo a {
+  height: 14%;
+}
+
+.navigacija {
+  right: 0;
+  margin-top: 1.9%;
+  text-align: center;
+}
+.navigacija span {
+  font-size:40px;
+  cursor:pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 10%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    font-size: 60px;
+  }
+  #centar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    left: 10%;
+  }
+
+h1 {
+  font-size: 4em;
+  font-weight: 200;
+}
+  main {
+    /*margin: 8% 11%;
+    width: 62%;*/
+    display: flex;
+  }
+  .slpoz, .maintext {
+    width: 50%;
+  }
+  .slpoz {
+    height: 100vh;
+    background-image: url("img/abmodel.jpg");
+    background-size: cover;
+  }
+  .maintext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .maintextred {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .maintextred div {
+    text-align: left;
+  }
+
+  /*#drugideo {
+  width: 100%;
+   background-image: url("img/gal1.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+  }*/
+
+.container {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.item {
+  width: 100%;
+  height: 100vh;
+}
+.item img {
+  height: 100vh;
+
+}
+
+#trecideo {
+  margin: 2% 0;
+  border: 2px solid black;
+  border-radius: 0 0 17% 0;
+  background-color: #181818;
+}
+.red {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 8% 3%;
+}
+.red h2, .red p {
+  line-height: 1.5em;
+  color: white;
+}
+.red p {
+  font-size: 1.2em;
+  margin: 3% 0;
+}
+.red a {
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  width: 140px;
+}
+.red a:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#cetvrtideo {
+  margin: 3% 0;
+}
+.galerija {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+.galerija a {
+  width: 30%;
+  margin-top: 2%;
+}
+.galerija img:hover {
+  opacity: 0.8;
+}
+
+#petideo {
+  margin: 3% 0 5%;
+
+}
+.okvir {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid grey;
+}
+.levo {
+  width: 30%;
+  height: 22vh;
+}
+.levo h3 {
+  font-size: 2em;
+  font-weight: 200;
+  margin-bottom: 9%;
+}
+.levo a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 10px;
+  transition: 0.2s;
+}
+.levo a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.2s;
+}
+.desno {
+  width: 60%;
+}
+.desno p {
+  line-height: 1.5em;
+}
+
+    footer {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/paint2.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      background-attachment: fixed;
+    }
+    .gorefuter {
+      padding: 120px 5% 9%;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+    }
+    footer a {
+
+      color: white;
+    }
+    footer a:hover {
+      color: grey;
+      text-decoration: none;
+    }
+    .futprostorgore {
+      margin-top: 20%;
+    }
+
+    .dno {
+      color: white;
+      text-align: center;
+      margin-top: 60px;
+    }
+    #top {
+      float: right;
+      position: fixed;
+      bottom: 10px;
+      right: 15px;
+      display: none;
+
+    }
+    #top a {
+        background-color: rgb(34, 35, 42);
+      color: #8c8989;
+    padding: 7px 11px;
+    }
+    #top a:hover {
+      background-color: #f2ab37;
+    }
+
+
+@media screen and (max-width: 910px){
+  aside {
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color: inherit;
+  }
+
+  /*logo*/
+  .logo {
+    margin-left: 2%;
+  }
+  .logo a {
+    height: 4%;
+  }
+
+  /*navigacija*/
+  .navigacija {
+    margin-right: 2%;
+  }
+  .overlay {
+    left: 0;
+  }
+  .overlay-content {
+    width: 100%;
+  }
+  .overlay .closebtn {
+    right: 2%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+    main {
+      margin: 120px 0 9% 0;
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+    .slpoz, .maintext {
+      width: 100%;
+    }
+    .slpoz {
+      height: 50vh;
+    }
+
+.item {
+  height: 50vh;
+}
+
+.red p {
+  font-size: 1em;
+}
+.red h2 {
+  font-size: 1.5em;
+}
+
+#cetvrtideo {
+  margin: 8% 0 3%;
+}
+#cetvrtideo h3, #petideo h3 {
+  font-size: 1.1em;
+}
+
+.galerija a {
+  width: 45%;
+}
+
+.okvir {
+  flex-direction: column;
+  align-items: center;
+}
+.levo {
+  width: 60%;
+}
+.okvir h3 {
+
+}
+
+    footer {
+      height: auto;
+      padding-bottom: 1%;
+      background-attachment: scroll;
+    }
+    .gorefuter {
+      flex-direction: column;
+      padding: 6% 5% 6% 10%;
+    }
+    .gorefuter div {
+      padding-top: 4%;
+    }
+    .futprostorgore {
+      margin-top: 6%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+.maintextred {
+  flex-direction: column;
+  align-items: center;
+}
+.maintextred div {
+  text-align: center;
+  margin-top: 15px;
+}
+.galerija a {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 400px) {
+ .levo, .desno {
+   width: 90%;
+ }
+}
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
