@@ -21,18 +21,33 @@
     <link rel="icon" href="duratrans.png" type="image/icon">
     <link rel="stylesheet" href="umetnik1.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <div id="glavni">
 
     <aside class="logo">
+
     <a href="index.html"><img src="duratrans.png"></a>
-    <nav class="navigaintern" data-aos="fade-up"><!---->
+    <!--<nav class="navigaintern" data-aos="fade-up">
       <a href="umetnici.html" id="dugme"><i class="fas fa-angle-left"></i> ARTISTS</a>
       <a href="#prvideo">Biography</a>
       <a href="#drugideo">Exhibitions</a>
      <a href="#trecideo">Video</a>
      <a href="#cetvrtideo">Work</a>
-   </nav>
+   </nav>-->
+
+   <nav id="myScrollspy" class="navigaintern">
+     <a href="umetnici.html" id="dugme"><i class="fas fa-angle-left"></i> ARTISTS</a>
+         <ul class="nav">
+           <li><a href="#prvideo">Biography</a></li>
+           <li>  <a href="#drugideo">Exhibitions</a></li>
+           <li><a href="#trecideo">Video</a></li>
+
+               <li><a href="#cetvrtideo">Work</a></li>
+
+
+         </ul>
+       </nav>
+
     </aside>
 
     <div id="centar">
@@ -111,23 +126,23 @@
             <article id="cetvrtideo" data-aos="fade-down">
                <p>ARTWORK</p>
                <div class="galerija">
-                 <a href="img/izl1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                   <img src="img/izl1.jpg" alt="Barber Shop | haircut"></a>
-                   <a class="sldesno" href="img/zena2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                   <img src="img/zena2.jpg" alt="Barber Shop | haircut"></a>
-                   <a href="img/zena3.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                   <img src="img/zena3.jpg" alt="Barber Shop | haircut"></a>
-                   <a class="sldesno" href="img/izl2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                   <img src="img/izl2.jpg" alt="Barber Shop | haircut"></a>
+                 <a href="img/crtez8.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                   <img src="img/crtez8.jpg" alt="Barber Shop | haircut"></a>
+                   <a class="sldesno" href="img/crtez2resize.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                   <img src="img/crtez2resize.jpg" alt="Barber Shop | haircut"></a>
+                   <a href="img/crtez9.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                   <img src="img/crtez9.jpg" alt="Barber Shop | haircut"></a>
+                   <a class="sldesno" href="img/crtez4.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                   <img src="img/crtez4.jpg" alt="Barber Shop | haircut"></a>
 
-                   <a href="img/izl1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                     <img src="img/izl1.jpg" alt="Barber Shop | haircut"></a>
-                     <a class="sldesno" href="img/zena2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                     <img src="img/zena2.jpg" alt="Barber Shop | haircut"></a>
-                     <a href="img/zena3.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                     <img src="img/zena3.jpg" alt="Barber Shop | haircut"></a>
-                     <a class="sldesno" href="img/izl2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                     <img src="img/izl2.jpg" alt="Barber Shop | haircut"></a>
+                   <a href="img/crtez3.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                     <img src="img/crtez3.jpg" alt="Barber Shop | haircut"></a>
+                     <a class="sldesno" href="img/crtez6.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                     <img src="img/crtez6.jpg" alt="Barber Shop | haircut"></a>
+                     <a href="img/crtez8.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                     <img src="img/crtez8.jpg" alt="Barber Shop | haircut"></a>
+                     <a class="sldesno" href="img/crtez3.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                     <img src="img/crtez3.jpg" alt="Barber Shop | haircut"></a>
                  </div>
               </article>
 
@@ -223,35 +238,7 @@
               });
 
       </script>
-      <script>
-      //scrollSpy function
-     function scrollSpy() {
-       var sections = ['prvideo', 'drugideo', 'trecideo', 'cetvrtideo'];
-       var current;
-       for (var i = 0; i < sections.length; i++) {
-         if ( $('#'+sections[i]).offset().top <= $(window).scrollTop() ) {
-           current = sections[i];
-         }
-       }
-       $("nav a[href='#"+current+"']").addClass('active');
-       $("nav a").not("a[href='#"+current+"']").removeClass('active');
-     }
-     // smooth scrolling navigation
-     $("nav a").click( function() {
-       var target = $(this).attr("href");
-       $("body, html").animate({
-         scrollTop: $(target).offset().top
-       }, 300);
-       return false;
-     });
-     //scrollSpy call
-     $(document).ready( function() {
-       scrollSpy();
-     });
-     $(window).scroll( function() {
-       scrollSpy();
-     });
-      </script>
+
       <script>
     AOS.init();
   </script>

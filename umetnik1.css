@@ -53,7 +53,7 @@ aside {
   color: black;
   font-size: 1.1em;
 }
-.navigaintern a.active {
+li.active>a {
   border-right: 1px solid black;
 }
 #dugme {
@@ -246,7 +246,7 @@ footer {
   margin-top: 9%;
 }
 .gorefuter {
-  padding: 120px 5% 9%;
+  padding: 120px 10% 9%;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -284,6 +284,22 @@ padding: 7px 11px;
 #top a:hover {
   background-color: #f2ab37;
 }
+
+@media screen and (max-width: 1050px) {
+  .navigaintern {
+    display: none;
+  }
+  .gorefuter {
+    padding: 120px 5% 9%;
+  }
+}
+
+@media screen and (max-width: 920px){
+  video {
+    width: 450px;
+    height: 270px;
+  }
+}
 @media screen and (max-width: 790px) {
   aside {
     width: auto;
@@ -301,9 +317,6 @@ padding: 7px 11px;
     height: 4%;
   }
 
-  .navigaintern {
-    display: none;
-  }
 
   /*navigacija*/
   .navigacija {
@@ -349,6 +362,8 @@ padding: 7px 11px;
     font-size: 1.5em;
   }
 
+
+
   footer {
     height: auto;
     padding-bottom: 1%;
@@ -366,11 +381,28 @@ padding: 7px 11px;
   }
 }
 
+
+
 @media screen and (max-width: 670px) {
   .galerija a {
     width: 82%;
   }
   .sldesno {
     margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 590px) {
+  video {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  video {
+    width: 250px;
+    height: 150px;
   }
 }
